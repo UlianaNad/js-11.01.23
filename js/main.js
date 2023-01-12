@@ -1,4 +1,6 @@
 let item = document.querySelector('.item');
+let el = item.innerHTML;
+item.innerHTML = 'Touch me!';
 
 function move(){
   
@@ -13,7 +15,7 @@ function move(){
 let mouseenter = move()();
 
 item.addEventListener('mouseout', () =>{
-    item.innerHTML = item;
+    item.innerHTML = el;
     item.style.color = 'black';
-    console.log(item)
+    console.log(el)
 });
